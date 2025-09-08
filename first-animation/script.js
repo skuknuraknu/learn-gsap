@@ -1,8 +1,11 @@
 gsap.to(".card", {
-    scale: 1,
+    scale: 1.25,
+    x: -100,
     opacity: 1,
     duration: 2,
-    onComplete: () => {
-        gsap.to(".card", { y: -50, repeat: -1, yoyo: true, duration: 0.2});
-    }
+    rotation: 360,
+    borderRadius: "50%",
+    ease: 'power1.inOut',
+    repeat: -1,
+    yoyo: true,
 })
